@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Favor de ingresar los datos<br/>
+        <h:form id="frm"> 
+            dato1 : <h:inputText id="dato1" value="#{operacionesBean.dato1}"/>
+            <br/>dato2 : <h:inputText id="dato2" value="#{operacionesBean.dato2}"/>
+            
+            <br/>resultado : <h:inputText id="resultado" value="#{operacionesBean.resultado}"/>
+            <br/> <h:commandButton id="sumar" value="sumar" action="#{operacionesBean.sumar()}"/> <h:commandButton id="restar" value="restar" action="#{operacionesBean.restar()}"/> 
+            <h:commandButton id="multiplicar" value="multiplicar" action="#{operacionesBean.multiplicar()}"/>  <h:commandButton id="dividir" value="dividir" action="#{operacionesBean.dividir()}"/> 
+        </h:form>
+    </h:body>
+</html>
+
